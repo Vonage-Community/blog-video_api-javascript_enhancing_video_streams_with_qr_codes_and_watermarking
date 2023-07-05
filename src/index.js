@@ -8,7 +8,11 @@ import OT from "@opentok/client";
 import qrCode from "./transformers/add-qr-code";
 import Watermark from "./transformers/watermark";
 
-var publisherProperties = { width: 400, height: 300, insertMode: "append" };
+var publisherProperties = {
+  width: "100%",
+  height: "100%",
+  insertMode: "append",
+};
 const publisher = OT.initPublisher("publisher", publisherProperties, () => {
   console.log("Publisher initialized");
 });
@@ -79,7 +83,6 @@ const applyQrCode = function () {
 };
 
 const applyWatermark = () => {
-  console.log("watermarkImage", watermarkImage, Boolean(!watermarkImage));
   if (!watermarkImage) {
     console.log("No watermark image selected");
     return;

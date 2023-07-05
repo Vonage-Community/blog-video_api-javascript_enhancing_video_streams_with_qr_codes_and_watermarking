@@ -19,9 +19,9 @@ export default class Transformer {
 
   _computePosition(frame) {
     if (this._position === "top-left") {
-      return { x: frame.displayWidth - 150, y: 0 };
+      return { x: frame.displayWidth - 150, y: 50 };
     } else if (this._position === "top-right") {
-      return { x: 0, y: 0 };
+      return { x: 0, y: 50 };
     } else if (this._position === "bottom-left") {
       return { x: frame.displayWidth - 150, y: frame.displayHeight - 150 };
     } else if (this._position === "bottom-right") {
