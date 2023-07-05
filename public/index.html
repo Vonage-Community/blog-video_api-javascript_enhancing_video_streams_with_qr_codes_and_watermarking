@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Video Watermark</title>
+    <script src="https://unpkg.com/lodash@4.17.20"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+  </head>
+  <body>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>QR Code Project</title>
+        <link
+          href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+          rel="stylesheet"
+        />
+      </head>
+      <body class="bg-gray-200 min-h-screen flex justify-center items-center">
+        <div
+          class="flex w-11/12 lg:w-3/4 xl:w-1/2 bg-white rounded-lg border border-primaryBorder shadow-default"
+        >
+          <div class="w-1/2 p-6">
+            <!-- Your Custom HTML goes here -->
+            <div class="flex">
+              <div id="publisher"></div>
+            </div>
+          </div>
+
+          <div class="w-1/2 p-6">
+            <h1
+              class="text-2xl font-medium text-primary mt-4 mb-12 text-center"
+            >
+              Custom Generator
+            </h1>
+
+            <label class="font-semibold text-sm text-gray-600 pb-1 block"
+              >Select Option</label
+            >
+            <select
+              id="option-select"
+              class="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full"
+            >
+              <option value="qr-code">QR Code</option>
+              <option value="watermark">Watermark</option>
+            </select>
+
+            <div id="qr-code-form">
+              <h1
+                class="text-2xl font-medium text-primary mt-4 mb-12 text-center"
+              >
+                QR Code Generator
+              </h1>
+
+              <label class="font-semibold text-sm text-gray-600 pb-1 block"
+                >QR Code Website</label
+              >
+              <input
+                id="qr-text"
+                type="text"
+                class="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full"
+              />
+
+              <label class="font-semibold text-sm text-gray-600 pb-1 block"
+                >Select Size</label
+              >
+              <select
+                id="qr-size"
+                class="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full"
+              >
+                <option value="128x128">128x128</option>
+                <option value="256x256">256x256</option>
+                <option value="512x512">512x512</option>
+              </select>
+
+              <label class="font-semibold text-sm text-gray-600 pb-1 block"
+                >X Position</label
+              >
+              <input
+                id="x-position"
+                type="number"
+                class="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full"
+              />
+
+              <label class="font-semibold text-sm text-gray-600 pb-1 block"
+                >Y Position</label
+              >
+              <input
+                id="y-position"
+                type="number"
+                class="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full"
+              />
+            </div>
+
+            <div id="watermark-form" class="hidden">
+              <label class="font-semibold text-sm text-gray-600 pb-1 block"
+                >Upload Image</label
+              >
+              <input
+                type="file"
+                id="watermark-image"
+                class="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full"
+                accept="image/png, image/jpeg"
+              />
+
+              <label class="font-semibold text-sm text-gray-600 pb-1 block"
+                >Position</label
+              >
+              <select
+                id="watermark-position"
+                class="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full"
+              >
+                <option value="top-left">Top Left</option>
+                <option value="top-right">Top Right</option>
+                <option value="bottom-left">Bottom Left</option>
+                <option value="bottom-right">Bottom Right</option>
+              </select>
+            </div>
+            <button
+              id="apply-btn"
+              class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-5"
+            >
+              Apply Transformer
+            </button>
+            <button
+              id="clear-btn"
+              class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-5"
+            >
+              Clear Transformer
+            </button>
+          </div>
+        </div>
+      </body>
+    </html>
+
+    <script src="dist/bundle.js" type="application/javascript"></script>
+    <!-- <script src="bundle.js" type="application/javascript"></script> -->
+  </body>
+</html>
