@@ -13,7 +13,7 @@
     "watch": "webpack --watch",
     "serve": "webpack serve"
   },
-  "author": "",
+  "author": "Enrico Portolan",
   "license": "ISC",
   "dependencies": {
     "@opentok/client": "^2.25.4",
