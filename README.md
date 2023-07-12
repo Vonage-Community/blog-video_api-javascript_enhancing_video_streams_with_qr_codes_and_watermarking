@@ -9,7 +9,9 @@ This repository contains code to modify a video stream using [@vonage/media-proc
 
 ## Screenshots
 
+![Qr Code Generataor](./images/qr-code-generator.png)
 
+![Watermark Generataor](./images/watermark-generator.png)
 
 ## Prerequisites
 
