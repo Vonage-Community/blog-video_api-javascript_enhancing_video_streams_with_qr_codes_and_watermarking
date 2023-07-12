@@ -20,6 +20,11 @@ Before you begin, ensure you have met the following requirements:
 - You have installed the latest version of [Node.js](https://nodejs.org/en/).
 - You have a basic understanding of JavaScript.
 
+## Install
+
+1. Run `npm install`
+2. Run `npm run serve`
+
 ## Usage
 
 The video stream transformer is an interface with two main functionalities:
