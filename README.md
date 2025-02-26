@@ -9,7 +9,7 @@ This repository contains code to modify a video stream using [@vonage/media-proc
 
 ## Demo
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/fork/github/vonage-community/tree/main/blog-video_api-javascript_enhancing_video_streams_with_qr_codes_and_watermarking) to see the application working in your browser.
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vonage-community/blog-video_api-javascript_enhancing_video_streams_with_qr_codes_and_watermarking) to see the application working in your browser.
 
 ## Screenshots
 
