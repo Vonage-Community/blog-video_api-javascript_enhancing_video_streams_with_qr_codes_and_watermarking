@@ -7,6 +7,10 @@ This repository contains code to modify a video stream using [@vonage/media-proc
 - Upload and display an image as a watermark on the video stream.
 - Generate a QR Code from a given link and display it on the video stream.
 
+## Demo
+
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/fork/github/vonage-community/blog-video_api-javascript_enhancing_video_streams_with_qr_codes_and_watermarking) to see the application working in your browser.
+
 ## Screenshots
 
 ![Qr Code Generataor](./images/qr-code-generator.png)
