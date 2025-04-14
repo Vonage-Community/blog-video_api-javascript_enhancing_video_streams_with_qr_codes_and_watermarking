@@ -18,7 +18,7 @@
   "dependencies": {
     "@opentok/client": "^2.25.4",
     "@vonage/media-processor": "^2.0.3",
-    "express": "^4.18.2"
+    "express": "^5.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.22.5",
