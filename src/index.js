@@ -4,7 +4,7 @@ import {
   MediaProcessor,
   MediaProcessorConnector,
 } from "@vonage/media-processor";
-import OT from "@opentok/client";
+import OT from "@vonage/client-sdk-video";
 import qrCode from "./transformers/add-qr-code";
 import Watermark from "./transformers/watermark";
 
