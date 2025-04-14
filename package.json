@@ -16,7 +16,7 @@
   "author": "Enrico Portolan",
   "license": "ISC",
   "dependencies": {
-    "@opentok/client": "^2.25.4",
+    "@vonage/client-sdk-video": "^2.29.3",
     "@vonage/media-processor": "^2.0.3",
     "express": "^5.0.0"
   },
