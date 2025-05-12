@@ -19,8 +19,8 @@ export default class Transformer {
     this.qrHeight = height || 128;
     this.colorDark = colorDark || '#000000';
     this.colorLight = colorLight || '#ffffff'; // Usually border is white
-    this.x = x || 0; // Position on the final video frame
-    this.y = y || 0; // Position on the final video frame
+    this.x = x || this.qrWidth + 50; // Position on the final video frame
+    this.y = y || this.qrHeight + 50; // Position on the final video frame
     // Define the border size (quiet zone)
     this.borderSize =
       borderSize !== undefined && borderSize >= 0 ? borderSize : 8; // Default to 8px border
